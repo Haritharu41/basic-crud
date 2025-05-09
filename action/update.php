@@ -4,10 +4,6 @@ include '../config/dbConn.php';
 if (isset($_GET['updateid']) && is_numeric($_GET['updateid'])) {
     $id = $_GET['updateid'];
 
-
-  
-
-
     // Fetch student record for the given ID
     $sql = "SELECT * FROM MyGuests WHERE id = $id";
     $result = mysqli_query($conn, $sql);
